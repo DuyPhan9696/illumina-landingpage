@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1;font-family: 'Open Sans', sans-serif;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+section{display: block;}
+ul{list-style: none;}
+img{max-width: 100%;}
+
+/*---------------------------------------start header-----------------------------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: block;
+    top: 0;
+    background: linear-gradient(90deg, rgba(14, 42, 132, 0.5) 0%, transparent 42.36%);
+    z-index: 9999;
+}
+.navbar {
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 0;
+    margin-left: 0;
+    flex-wrap: nowrap;
+}
+.navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Koulen', cursive;
+    font-weight: 400;
+    line-height: 45px;
+}
+.navbar-nav .nav-item{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.navbar-nav .nav-item:last-child{
+    margin-right: 0;
+}
+.navbar-nav .nav-item .nav-link {
+    padding: 6px 14px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-nav .nav-item .nav-link.active{
+    background: #1B81BB;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.navbar .navbar-toggler{
+    position: absolute;
+    right: 0;
+}
+.navbar .navbar-collapse.show {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+}
+/*---------------------------------------end header-----------------------------------------------*/
+
+/*---------------------------------------start banner-----------------------------------------------*/
+.banner {
+    background: linear-gradient(90deg, #2E9EE0 0%, #93CDEF 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: auto;
+    position: relative;
+    padding-top: 146px;
+    padding-bottom:57px;
+}
+.banner_top{
+    margin-bottom: 60px;
+}
+.banner_top h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0.07em;
+    color: #fff;
+    margin-bottom: 27px;
+}
+.banner_top p{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+.banner_top p span{
+    background: #3272C9;
+    padding:0 4px;
+}
+
+.banner_bottom .about-us{
+    max-width:800px;
+    width: 50%;
+    padding:56px 52px 67px 42px;
+    background: linear-gradient(269.35deg, #36D1DC 0.56%, #5B86E5 99.47%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+.banner_bottom h1,
+.banner_bottom h2,
+.banner_bottom h3{
+    color:#fff;
+    text-transform: uppercase;
+
+}
+
+.banner_bottom .about-us h1{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0.07em;
+    text-align: left;
+}
+.banner_bottom .about-us h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    margin:14px 0;
+}
+.banner_bottom .about-us h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+}
+.banner_bottom .about-us p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 31px;
+    text-align: left;
+    margin-top:35px;
+    color:#fff;
+}
+.banner_bottom .banner_img{
+    bottom:-100px; 
+    left:66px;
+}
+.banner_bottom .banner_img .polygon-bot{
+    bottom:-19px; 
+    left:190px;
+}
+.banner_bottom .banner_img .polygon-left{
+    left:-66px;
+    bottom:83px; 
+}
+.banner_bottom .banner_img .main-img{
+    z-index: 10;
+}
+
+@media screen and (min-width:1400px) {
+    /* Header */
+    .navbar-nav .nav-item{
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+}

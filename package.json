@@ -1,0 +1,27 @@
+{
+  "name": "illumina-landingpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuyPhan9696/illumina-landingpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuyPhan9696/illumina-landingpage/issues"
+  },
+  "homepage": "https://github.com/DuyPhan9696/illumina-landingpage#readme",
+  "dependencies": {
+    "@babel/node": "^7.17.10",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
