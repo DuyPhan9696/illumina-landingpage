@@ -1,24 +1,222 @@
 {
     "menu": [
+      {
+        "name": "About Us",
+        "link": "#about-us"
+      },
+      {
+        "name": "Product",
+        "link": "#product"
+      },
+      {
+          "name": "Our Services",
+          "link": "#our- services"
+      },
+      {
+          "name": "Process Execution",
+          "link": "#process-execution"
+        },
+      {
+          "name": "Contact Us",
+          "link": "#contact-us"
+      }
+    ],
+    "aboutUs":{
+      "title":"Solution - Transparency - Cooperation",
+      "content":"Our Technology Solutions and Consulting team will work with our clients to design, implement and optimize their Technology investment and transformation strategies. We will capture essential goals, long-term growth vision, and future needs to help select and implement solutions that match technology investments and business strategy and growth for businesses."
+    },
+    "services":{
+      "title":"Our Services",
+      "content":[
         {
-          "name": "About Us",
-          "link": "#about-us"
+          "name":"Blockchain",
+          "description":"Integrating blockchain into technology products",
+          "img":"blockchain-service.svg",
+          "alt":"blockchain-icon"
         },
         {
-          "name": "Product",
-          "link": "#product"
+          "name":"Develope",
+          "description":"Website-based application development - mobile, iot",
+          "img":"develope-service.svg",
+          "alt":"develope-icon"
         },
         {
-            "name": "Our Services",
-            "link": "#our-services"
+          "name":"Provide solutions",
+          "description":" Provide big data platform solutions: Data crawler,Data Lake, Data Streaming, Data Processing, Data Warehouse, Data Mining",
+          "img":"solutions-service.svg",
+          "alt":"solutions-icon"
         },
         {
-            "name": "Process Execution",
-            "link": "#process-execution"
-          },
-        {
-            "name": "Contact Us",
-            "link": "#contact-us"
+          "name":"Advise",
+          "description":"Integrating blockchain into technology products",
+          "img":"advise-service.svg",
+          "alt":"advise-icon"
         }
       ]
+    },
+    "processExecution":{
+      "title":"Process Execution",
+      "content":[
+        {
+          "name":"Business Jutification",
+          "description":"Prior to doing anything on a software project,  we've always put a premium on identifying client needs based on their business model, current problems, and goals. These information helps us to map out the existing workflows and client future goals.",
+          "img":"process-1.svg",
+          "alt":"process-1",
+          "position":"left"
+        },
+        {
+          "name":"Strategy and Solution Design",
+          "description":"We start documenting , developing, prototyping, and user testing your platform or product after gathering your requirements in a whiteboard session.",
+          "img":"process-2.svg",
+          "alt":"process-2",
+          "position":"right"
+        },
+        {
+          "name":"Development",
+          "description":"This phase involved programming and coding based on your approved designs. Our development lifecycle is divided into 5 stages: Design, Coding, Testing, Release and Maintance",
+          "img":"process-3.svg",
+          "alt":"process-3",
+          "position":"left"
+        },
+        {
+          "name":"Testing",
+          "description":"At this stage, we focus on the sequence of that during software testing. By employing a sane software testing life cycle,an organization ends up with a quality strategy more likely to better results. Presenting a perfect product to the customer is the end goal of every organization.",
+          "img":"process-4.svg",
+          "alt":"process-4",
+          "position":"right"
+        },
+        {
+          "name":"Deployment and Maintainance",
+          "description":"We getting software into the hands of the clients. On your approval, our team will release system in live. We exclusively take care of the process of changing a system after it has been delivered.",
+          "img":"process-5.svg",
+          "alt":"process-5",
+          "position":"left"
+        },
+        {
+          "name":"Testing",
+          "description":"At this stage, we focus on the sequence of that during software testing. By employing a sane software testing life cycle,an organization ends up with a quality strategy more likely to better results. Presenting a perfect product to the customer is the end goal of every organization.",
+          "img":"process-6.svg",
+          "alt":"process-6",
+          "position":"right"
+        }
+      ]
+    },
+    "product":{
+      "title":"Our Products and Customers",
+      "tabs":[
+        { 
+          "name":"vin",
+          "imgTitle":"vin.svg",
+          "alt":"vin-logo",
+          "active":"active show",
+          "techProduct":[
+            {
+              "nameProduct":"TPA VINFAST CHARGER",
+              "infoProduct":"Provide a platform that allows users to install and manage batteries for charging system of Vinfast's battery factory."
+            },
+            {
+              "nameProduct":"E-invoice",
+              "infoProduct":"The system allows businesses/organizations to create electronic invoices and pay taxes online."
+            },
+            {
+              "nameProduct":"Hệ thống giám sát và lắng nghe thông tin mạng xã hội",
+              "infoProduct":"Xây dựng và phát triển nền tảng dữ liệu lớn phục vụ việc giám sát và lắng nghe thông tin từ xác trang MXH: facebook, twitter, các trang báo điện tử. Tích hợp các giải pháp: Crawler, Big Data, AI."
+            }
+          ]
+        },
+        
+        { 
+          "name":"mind",
+          "imgTitle":"mind.svg",
+          "alt":"mind-logo",
+          "active":"",
+          "techProduct":[
+            {
+              "nameProduct":"Mind-1",
+              "infoProduct":"Provide a platform that allows users to install and manage batteries for charging system of Vinfast's battery factory."
+            },
+            {
+              "nameProduct":"Mind-2",
+              "infoProduct":"The system allows businesses/organizations to create electronic invoices and pay taxes online."
+            },
+            {
+              "nameProduct":"Mind-3",
+              "infoProduct":"Xây dựng và phát triển nền tảng dữ liệu lớn phục vụ việc giám sát và lắng nghe thông tin từ xác trang MXH: facebook, twitter, các trang báo điện tử. Tích hợp các giải pháp: Crawler, Big Data, AI."
+            }
+          ]
+        },
+        { 
+          "name":"tp-bank",
+          "imgTitle":"tp-bank.svg",
+          "alt":"tpbank-logo",
+          "active":"",
+          "techProduct":[
+            {
+              "nameProduct":"TP-Bank-1",
+              "infoProduct":"Provide a platform that allows users to install and manage batteries for charging system of Vinfast's battery factory."
+            },
+            {
+              "nameProduct":"TP-Bank-2",
+              "infoProduct":"The system allows businesses/organizations to create electronic invoices and pay taxes online."
+            },
+            {
+              "nameProduct":"TP-Bank-3",
+              "infoProduct":"Xây dựng và phát triển nền tảng dữ liệu lớn phục vụ việc giám sát và lắng nghe thông tin từ xác trang MXH: facebook, twitter, các trang báo điện tử. Tích hợp các giải pháp: Crawler, Big Data, AI."
+            }
+          ]
+        },
+        { 
+          "name":"topica",
+          "imgTitle":"topica.svg",
+          "alt":"topica-logo",
+          "active":"",
+          "techProduct":[
+            {
+              "nameProduct":"Topica-1",
+              "infoProduct":"Provide a platform that allows users to install and manage batteries for charging system of Vinfast's battery factory."
+            },
+            {
+              "nameProduct":"Topica-2",
+              "infoProduct":"The system allows businesses/organizations to create electronic invoices and pay taxes online."
+            },
+            {
+              "nameProduct":"Topica-3",
+              "infoProduct":"Xây dựng và phát triển nền tảng dữ liệu lớn phục vụ việc giám sát và lắng nghe thông tin từ xác trang MXH: facebook, twitter, các trang báo điện tử. Tích hợp các giải pháp: Crawler, Big Data, AI."
+            }
+          ]
+        }
+      ],
+      "carousel":[
+        {
+          "img":"sel-1.png",
+          "alt":"sel-1",
+          "name":"",
+          "content":[
+            {
+              "description":"Offer comprehensive control of employee working time through its state of the art time management software. The software also offers the ability to generate numerous useful analytical reports to address issues.",
+              "list":[
+                {
+                  "info":"1. Keep Up To Date With HR Matters"
+                },
+                {
+                  "info":"2. Software to Assure Compliance"
+                },
+                {
+                  "info":"3. Analytic Reports & Data for Cost Saving"
+                },
+                {
+                  "info":"4. Time Allocation System for Managers"
+                }
+              ]
+            },
+            {
+              "description":"Managing drivers and routes Allows customers (students of the driver training school) to schedule pick up and drop off Automatically allocate schedules and routes for drivers to pick up and drop off students",
+              "list":""
+            }
+          ]
+
+        }
+      ]
+      
+    }
 }
