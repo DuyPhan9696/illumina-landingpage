@@ -190,33 +190,249 @@
         {
           "img":"sel-1.png",
           "alt":"sel-1",
-          "name":"",
-          "content":[
+          "name":"Time Keeping Systems",
+          "desc":"Offer comprehensive control of employee working time through its state of the art time management software. The software also offers the ability to generate numerous useful analytical reports to address issues.",
+          "list":[
             {
-              "description":"Offer comprehensive control of employee working time through its state of the art time management software. The software also offers the ability to generate numerous useful analytical reports to address issues.",
-              "list":[
-                {
-                  "info":"1. Keep Up To Date With HR Matters"
-                },
-                {
-                  "info":"2. Software to Assure Compliance"
-                },
-                {
-                  "info":"3. Analytic Reports & Data for Cost Saving"
-                },
-                {
-                  "info":"4. Time Allocation System for Managers"
-                }
-              ]
+              "info":"1. Keep Up To Date With HR Matters."
             },
             {
-              "description":"Managing drivers and routes Allows customers (students of the driver training school) to schedule pick up and drop off Automatically allocate schedules and routes for drivers to pick up and drop off students",
-              "list":""
+              "info":"2. Software to Assure Compliance."
+            },
+            {
+              "info":"3. Analytic Reports & Data for Cost Saving."
+            },
+            {
+              "info":"4. Time Allocation System for Managers."
             }
           ]
-
+        },
+        {
+          "img":"sel-2.png",
+          "alt":"sel-2",
+          "name":"Time Management System",
+          "desc":"Managing drivers and routes.Allows customers (students of the driver training school) to schedule pick up and drop off Automatically allocate schedules and routes for drivers to pick up and drop off students."
+        },
+        {
+          "img":"sel-3.png",
+          "alt":"sel-3",
+          "name":"Car Booking Application",
+          "desc":"Managing drivers and routes.Allows customers (students of the driver training school) to schedule pick up and drop off Automatically allocate schedules and routes for drivers to pick up and drop off students."
+        },
+        {
+          "img":"sel-4.png",
+          "alt":"sel-4",
+          "name":"Hệ thống mạng xã hội liên kết giữa sinh viên và các công ty",
+          "desc":"Mạng xã hội cho phép các công ty tạo các event để kết nối giữa công ty với các sinh viên sắp ra trường. Tính năng chat realtime giữa sinh viên sắp ra trường và những cựu sinh viên cùng trường đang làm việc trong công ty mà họ quan tâm..."
+        },
+        {
+          "img":"sel-5.png",
+          "alt":"sel-5",
+          "name":"Building Management System",
+          "desc":"Management of buildings, including management of rooms, floors, properties, etc. Allows owners to organize tender projects for survey risk assessment. Allow contractors to participate in bidding, store risk survey information through mobile applications, then send data to the system. Export reports from the system. Export data and measurement charts to owners and organizations about the risks of buildings."
+        },
+        {
+          "img":"sel-6.png",
+          "alt":"sel-6",
+          "name":"E-invoice",
+          "desc":"The system allows businesses/organizations to create electronic invoices and pay taxes online."
+        },
+        {
+          "img":"sel-7.png",
+          "alt":"sel-7",
+          "name":"Hệ thống giám sát và lắng nghe thông tin mạng xã hội",
+          "desc":"Social media monitoring system. Allows Users to monitor and track information from platforms as facebook, twitter, electronic newspapers. Integrated solutions: Crawler, Big Data, AI."
         }
       ]
-      
+    },
+    "technology":{
+      "title":"Technologies we work with",
+      "tabs":[
+        { 
+          "name":"Blockchain",
+          "tabName":"blockchain",
+          "active":"active show",
+          "tools":[
+            {
+              "language":"NFT",
+              "img":"blc-1.svg",
+              "alt":"nft"
+            },
+            {
+              "language":"Solidity",
+              "img":"blc-2.svg",
+              "alt":"solidity"
+            },
+            {
+              "language":"Solana",
+              "img":"blc-3.svg",
+              "alt":"solana"
+            },
+            {
+              "language":"Near",
+              "img":"blc-4.svg",
+              "alt":"near"
+            }
+          ]
+        }, 
+        { 
+          "name":"FrontEnd",
+          "tabName":"frontend",
+          "active":"",
+          "tools":[
+            {
+              "language":"Css",
+              "img":"fe-1.svg",
+              "alt":"css"
+            },
+            {
+              "language":"Html",
+              "img":"fe-2.svg",
+              "alt":"html"
+            },
+            {
+              "language":"JavaScript",
+              "img":"fe-3.svg",
+              "alt":"javaScript"
+            },
+            {
+              "language":"TypeScript",
+              "img":"fe-4.svg",
+              "alt":"typeScript"
+            },
+            {
+              "language":"ReactJS",
+              "img":"fe-5.svg",
+              "alt":"react"
+            },
+            {
+              "language":"VueJS",
+              "img":"fe-6.svg",
+              "alt":"vue"
+            },
+            {
+              "language":"Angular 2+",
+              "img":"fe-7.svg",
+              "alt":"angular"
+            },
+            {
+              "language":"NodeJS",
+              "img":"fe-8.svg",
+              "alt":"nodejs"
+            }
+          ]
+        }, 
+        { 
+          "name":"BackEnd",
+          "tabName":"backend",
+          "active":"",
+          "tools":[
+            {
+              "language":"Java",
+              "img":"be-1.svg",
+              "alt":"java"
+            },
+            {
+              "language":"GoLang",
+              "img":"be-2.svg",
+              "alt":"golang"
+            },
+            {
+              "language":"Rust",
+              "img":"be-3.svg",
+              "alt":"rust"
+            },
+            {
+              "language":"NodeJS",
+              "img":"fe-8.svg",
+              "alt":"nodejs"
+            }
+          ]
+        }, 
+        { 
+          "name":"Database",
+          "tabName":"database",
+          "active":"",
+          "tools":[
+            {
+              "language":"Oracle",
+              "img":"db-1.svg",
+              "alt":"oracle"
+            },
+            {
+              "language":"Postgres",
+              "img":"db-2.svg",
+              "alt":"postgres"
+            },
+            {
+              "language":"MySQL",
+              "img":"db-3.svg", 
+              "alt":"MySQL"
+            },
+            {
+              "language":"SQL Server",
+              "img":"db-4.svg",
+              "alt":"SQL Server"
+            },
+            {
+              "language":"MongoDB ",
+              "img":"db-5.svg",
+              "alt":"oracle"
+            },
+            {
+              "language":"Redis",
+              "img":"db-6.svg",
+              "alt":"Redis"
+            },
+            {
+              "language":"ElasticSearch",
+              "img":"db-7.svg", 
+              "alt":"ElasticSearch"
+            },
+            {
+              "language":"ClickHouse",
+              "img":"db-8.svg",
+              "alt":"ClickHouse"
+            },
+            {
+              "language":"Arango",
+              "img":"db-9.svg",
+              "alt":"Arango "
+            }
+          ]
+        }, 
+        { 
+          "name":"Mobile",
+          "tabName":"mobile",
+          "active":"",
+          "tools":[
+            {
+              "language":"Android",
+              "img":"mb-1.svg",
+              "alt":"Android   "
+            },
+            {
+              "language":"IOS",
+              "img":"mb-2.svg",
+              "alt":"IOS"
+            },
+            {
+              "language":"React Native",
+              "img":"mb-3.svg",
+              "alt":"React Native"
+            },
+            {
+              "language":"Flutter",
+              "img":"mb-4.svg", 
+              "alt":"Flutter"
+            },
+            {
+              "language":"Kotlin",
+              "img":"mb-5.svg", 
+              "alt":"Kotlin"
+            }
+          ]
+        }
+      ]
     }
 }

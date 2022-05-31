@@ -34,6 +34,9 @@ img{max-width: 100%;}
     margin-bottom: 44px;
     text-transform: capitalize;
 }
+.col-2-5{
+    width:20%;
+}
 /*---------------------------------------start header-----------------------------------------------*/
 .header {
     position: fixed;
@@ -283,6 +286,14 @@ img{max-width: 100%;}
 .product{
     margin-top:83px;
 }
+.product .overlay{
+    z-index: 1;
+    left: -60px;
+    bottom: -170px;
+}
+.product-tabs{
+    z-index: 10;
+}
 .product-tabs .nav{
     background: #FFFFFF;
     border-radius: 8px;
@@ -352,11 +363,128 @@ img{max-width: 100%;}
     text-align: center;
 }
 .product-carousel{
+    z-index: 10;
+    width: calc(100% + 30px);
     margin-top:46px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.product-carousel .owl-stage-outer{
+    width: 100%;
+    margin: 0;
+}
+.product-carousel .owl-stage-outer .owl-item{
+    margin:0;
+}
+.product-carousel .item{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(209, 209, 209, 0.25);
+    border-radius: 8px;
+    min-height: 522px;
+    margin:17px;
+}
+.product-carousel .item:hover{
+    box-shadow: 0px 4px 32px #C6C8FF;
+}
+.product-carousel .item img{
+    width: 100%;
+    height:234px;
+}
+.product-carousel .item .item-content{
+    padding:0 18px 0 20px;
+}
+.product-carousel .item .item-content h2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    color: #071B3A;
+    margin-top:20px;
+}
+.product-carousel .item .item-content p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color:#6F7B88;
+}
+.product-carousel .item .item-content .desc{
+    margin-top:36px;
 }
 /*---------------------------------------end product-----------------------------------------------*/
-/*---------------------------------------start product-----------------------------------------------*/
-/*---------------------------------------end product-----------------------------------------------*/
+/*---------------------------------------start technology-----------------------------------------------*/
+.technology{
+    margin-top:76px;
+    z-index: 10;
+    padding:92px 0 262px 0;
+    background: #FFFFFF;
+}
+.technology .overlay{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.technology_content{
+    max-width: 830px;
+    margin: 0 auto;
+}
+.technology-tabs .nav-tabs{
+    border:none;
+    grid-column-gap: 115px;
+}
+.technology-tabs .nav-link{
+    padding: 0;
+    border:none;
+    border-bottom:2px solid transparent;
+    padding-bottom:26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color:#424242;
+    transition: color 0.5s;
+}
+.technology-tabs .nav-link:hover{
+    border:none;
+    border-bottom:2px solid transparent;
+    color: #4CACE5;
+}
+.technology-tabs .nav-link:focus{
+    border:none;
+    border-bottom:2px solid transparent;
+}
+.technology-tabs .nav-link:focus-visible{
+    outline:none;
+}
+.technology-tabs .nav-link.active{
+    border:none;
+    color: #39C1F4;
+    border-bottom:2px solid #39C1F4;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+
+}
+.technology-tabs .tab-pane{
+    margin-top:44px;
+}
+.technology-lists{
+    padding: 0 34px;
+    grid-row-gap: 69px;
+}
+.technology-lists .col-2-5{
+    height:105px;
+}
+.technology-lists .col-2-5 img{
+    width: 64px;
+    height: 64px;
+}
+.technology-lists .col-2-5 p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-top:25px;
+}
+
+/*---------------------------------------end technology-----------------------------------------------*/
 /*---------------------------------------start product-----------------------------------------------*/
 /*---------------------------------------end product-----------------------------------------------*/
 /*---------------------------------------start product-----------------------------------------------*/
