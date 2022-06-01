@@ -22,7 +22,10 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg row py-3">
           <div class="col-3 col-xxl-4">
-            <a class="navbar-brand text-uppercase py-0" href="#">Illumina</a>
+              <a class="logo navbar-brand text-uppercase py-0 " href="#">
+                  <img src="imgs/<%= data.logo.img %>" alt="logo"/>
+                  <p><%- data.logo.name %></p>
+              </a>
           </div>
           <div class="container-fluid col-9 col-xxl-8">
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -34,7 +37,7 @@
               <ul class="navbar-nav">
                 <% for (i in data.menu) {%>
                   <li class="nav-item">
-                    <a class="nav-link" href="<%= data.menu[i].link %>" target="_blank">
+                    <a class="link-page nav-link <%= data.menu[i].active %>" href="#<%= data.menu[i].link %>">
                       <%= data.menu[i].name %>
                     </a>
                   </li>
@@ -45,7 +48,7 @@
         </nav>
       </div>
     </header>
-    <section class="banner position-relative">
+    <section class="banner position-relative" id="about-us">
       <div class="container-fluid px-0">
         <div class="banner_top container">
           <h1 class="text-uppercase text-center">Welcome to Illumina</h1>
@@ -69,7 +72,24 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="core position-relative">
+      <img class="ovl-2" src="imgs/ovl-2-core.svg" alt="polygon-top"/>
+      <img class="ovl-1" src="imgs/ovl-1-core.svg" alt="ovl-wave"/>
+      <img class="ovl-3" src="imgs/ovl-3-core.svg"alt="polygon-right"/>
+      <div class="container position-relative">
+        <h1 class="title-content"><%-data.core.title%></h1>
+        <div class="core_content d-flex justify-content-center">
+          <% for (i in data.core.lists) {%>
+          <div class="core_item d-flex flex-column align-items-center ">
+            <img src="imgs/<%= data.core.lists[i].img %>" alt="<%= data.core.lists[i].alt %>"/>
+            <h2><%= data.core.lists[i].name %></h2>
+            <p><%= data.core.lists[i].desc %></p>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </section>
+    <section class="services position-relative" id="services">
       <div class="container container-cus">
         <h1 class="title-content"><%-data.services.title%></h1>
         <div class="services_content row">
@@ -83,7 +103,7 @@
         </div>
       </div>
     </section>
-    <section class="process">
+    <section class="process position-relative" id="process">
       <div class="container container-cus">
         <h1 class="title-content"><%-data.processExecution.title%></h1>
         <div class="process_content position-relative">
@@ -96,11 +116,11 @@
             </div>
           </div>
           <% } %>
-          <img class="position-absolute" src="imgs/overlay-process.svg" alt="overlay process"/>
         </div>
       </div>
+      <img class="ovl position-absolute" src="imgs/overlay-process.svg" alt="overlay process"/>
     </section>
-    <section class="product">
+    <section class="product position-relative" id="product">
       <div class="container container-cus position-relative">
         <h1 class="title-content"><%-data.product.title%></h1>
         <div class="product-tabs position-relative">
@@ -153,13 +173,18 @@
           </div>
           <% } %>
         </div>
-        <img class="overlay position-absolute" src="imgs/overlay-product.svg" alt="overlay product"/>
       </div>
+      <img class="overlay position-absolute" src="imgs/overlay-product.svg" alt="overlay product"/>
+        <img class="ovl-pro-l position-absolute" src="imgs/ovl-pro-l.svg" alt="overlay product left"/>
+        <img class="ovl-pro-r position-absolute" src="imgs/ovl-pro-r.svg" alt="overlay product right"/>
     </section>
-    <section class="technology position-relative">
-      <div class="overlay">
-      </div>
-      <div class="container container-cus">
+    <section class="technology position-relative" id="tech">
+      <img class="ovl-t-1 position-absolute" src="imgs/tech-ovl-1.svg" alt="tech-ovl-1"/>
+      <img class="ovl-t-2 position-absolute" src="imgs/tech-ovl-2.svg" alt="tech-ovl-2"/>
+      <img class="ovl-t-3 position-absolute" src="imgs/tech-ovl-3.svg" alt="tech-ovl-3"/>
+      <img class="ovl-t-4 position-absolute" src="imgs/tech-ovl-4.svg" alt="tech-ovl-4"/>
+      <img class="ovl-t-5 position-absolute" src="imgs/tech-ovl-5.svg" alt="tech-ovl-5"/>
+      <div class="container container-cus position-relative">
         <div class="technology_content d-flex flex-column">
           <h1 class="title-content"><%-data.technology.title%></h1>
           <div class="technology-tabs position-relative">
@@ -190,6 +215,63 @@
         </div>
       </div>
     </section>
+    <section class="contact-us position-relative" id="contact-us">
+      <img class="position-absolute ovl-bg" src="imgs/contact-ovl.svg" alt="overlay background"/>
+      <img class="position-absolute ovl-l" src="imgs/ovl-form-l.svg"alt="polygon left"/>
+      <img class="position-absolute ovl-r" src="imgs/ovl-form-r.svg"alt="polygon right"/>
+
+      <div class="container position-relative">
+        <h1 class="title-content"><%-data.contactUs.title%></h1>
+        <div class="contact-us-content row">
+          <div class="content-l col">
+            <img src="imgs/<%-data.contactUs.img%>"/>
+            <h2>Get in touch</h2>
+            <% for (i in data.contactUs.info) {%>
+              <div class="item">
+                <span class="d-flex">
+                  <img src="imgs/<%= data.contactUs.info[i].icon %>" alt="<%= data.contactUs.info[i].alt %>" />
+                  <h3><%= data.contactUs.info[i].name %></h3>
+                </span>
+                <p><%= data.contactUs.info[i].content %></p>
+              </div>
+            <% } %>
+          </div>
+          <div class="col">
+            <form>
+              <div class="mb-3 position-relative">
+                <img class="position-absolute" src="imgs/user-icon.svg" alt="user"/>
+                <input type="text" class="form-control" id="name" placeholder="First Name">
+              </div>
+              <div class="mb-3 position-relative">
+                <img class="position-absolute" src="imgs/phone-icon.svg" alt="phone"/>
+                <input type="text" class="form-control" id="phone" placeholder="Phone">
+              </div>
+              <div class="mb-3 position-relative">
+                <img class="position-absolute" src="imgs/email-icon.svg" alt="email"/>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="mb-3 position-relative" >
+                <img class="mess position-absolute" src="imgs/mess-icon.svg" alt="mess"/>
+                <textarea class="form-control" id="message" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer position-relative">
+      <div class="footer_content d-flex flex-column d-flex align-items-center justify-content-center">
+        <span class="logo">
+          <img src="imgs/<%= data.logo.img %>" alt="logo"/>
+          <p><%- data.logo.name %></p>
+        </span>
+        <h3>Solution - Transparency - Cooperation</h3>
+      </div>
+       <img class="position-absolute ovl-f1" src="imgs/ovl-footer-1.svg" alt="overlay-1"/>
+       <img class="position-absolute ovl-f2" src="imgs/ovl-footer-2.svg" alt="overlay-2"/>
+       <img class="position-absolute ovl-f3" src="imgs/ovl-footer-3.svg" alt="overlay-3"/>
+    </footer>
   </body>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>

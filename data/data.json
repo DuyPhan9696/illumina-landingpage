@@ -1,29 +1,68 @@
 {
+    "logo":{
+      "name":"Illumia",
+      "img":"logo.svg"
+    },
     "menu": [
       {
         "name": "About Us",
-        "link": "#about-us"
+        "link": "about-us"
       },
       {
         "name": "Product",
-        "link": "#product"
+        "link": "product"
       },
       {
-          "name": "Our Services",
-          "link": "#our- services"
+        "name": "Our Services",
+        "link": "services"
       },
       {
-          "name": "Process Execution",
-          "link": "#process-execution"
-        },
+        "name": "Process Execution",
+        "link": "process"
+      },
       {
-          "name": "Contact Us",
-          "link": "#contact-us"
+        "name": "Contact Us",
+        "link": "contact-us"
       }
     ],
     "aboutUs":{
       "title":"Solution - Transparency - Cooperation",
       "content":"Our Technology Solutions and Consulting team will work with our clients to design, implement and optimize their Technology investment and transformation strategies. We will capture essential goals, long-term growth vision, and future needs to help select and implement solutions that match technology investments and business strategy and growth for businesses."
+    },
+    "core":{
+      "title":"Core Value",
+      "lists":[
+        {
+          "img":"core-1.svg",
+          "alt":"Commitment",
+          "name":"Commitment",
+          "desc":"Be accountable, work together as a team and communicate clearly."
+        },
+        {
+          "img":"core-2.svg",
+          "alt":"Innovation",
+          "name":"Innovation",
+          "desc":"Think outside the box, challenge constructively and act before others do."
+        },
+        {
+          "img":"core-3.svg",
+          "alt":"Experience",
+          "name":"Experience",
+          "desc":"Working with an agile and highly experienced team."
+        },
+        {
+          "img":"core-4.svg",
+          "alt":"Quality",
+          "name":"Quality",
+          "desc":"Always deliver exceptional quality, accomplish and improve."
+        },
+        {
+          "img":"core-5.svg",
+          "alt":"Transperancy",
+          "name":"Transperancy",
+          "desc":"Integrating blockchain into technology products"
+        }
+      ]
     },
     "services":{
       "title":"Our Services",
@@ -434,5 +473,32 @@
           ]
         }
       ]
+    },
+    "contactUs":{
+      "title":"Contact Us",
+      "img":"img-contact.svg",
+      "info":[
+        {
+          "name":"Address",
+          "icon":"address.svg",
+          "alt":"address",
+          "content":"8a Hoang Cau Moi Street, Trung Liet Ward, Dong Da District, Hanoi."
+        },
+        {
+          "name":"Phone",
+          "icon":"phone.svg",
+          "alt":"phone",
+          "content":"+84 382008890"
+        },
+        {
+          "name":"Email",
+          "icon":"email.svg",
+          "alt":"email",
+          "content":"contact.illumia@gmail.com"
+        }
+      ]
+    },
+    "footer":{
+       "desc":"Solution - Transparency - Cooperation"
     }
 }
