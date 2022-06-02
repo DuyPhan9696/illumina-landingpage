@@ -20,9 +20,10 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 $(document).ready(function(){
-    // document.documentElement.scrollTop = 0;
-    // document.body.scrollTop = 0;
     $(window).scroll(function() { 
       if ($(document).scrollTop() > 50) { 
         $(".header").css("background-color", "#4C8AF0");
@@ -30,12 +31,12 @@ $(document).ready(function(){
         $(".header").css("background-color", "transparent");
       }
     });
-    $("a[href*='#']:not([href='#])").click(function() {
+    $("a[href*='#']:not([href='#])").click(function(e) {
       let target = $(this).attr("href");
       $('html,body').stop().animate({
         scrollTop: $(target).offset().top
-      }, 300);
-      event.preventDefault();
+      }, 1000);
+      e.preventDefault();
     });
 });
 $(".header .nav-item .nav-link ").click(function(){
@@ -47,14 +48,16 @@ $(".header .nav-item .nav-link ").click(function(){
   }
   $(this).addClass("active")
 })
-var noti = document.querySelector(".noti")
-var dataOj = {
-name: document.querySelector('input[id="name"]'),
-phone: document.querySelector('input[id="phone"]'),
-email: document.querySelector('input[id="email"]'),
-mess: document.querySelector('textarea[id="mess"]')
-}
+
 document.querySelector("#submit_form").onsubmit=function(e){
+  document.getElementById("submit").disabled = true;
+  let noti = document.querySelector(".noti")
+  let dataOj = {
+  name: document.querySelector('input[id="name"]'),
+  phone: document.querySelector('input[id="phone"]'),
+  email: document.querySelector('input[id="email"]'),
+  mess: document.querySelector('textarea[id="mess"]')
+  }
   e.preventDefault()  
   let checked = validateEmail(dataOj.email.value);
   sendInfo(checked, dataOj, noti)
@@ -65,36 +68,45 @@ const validateEmail = (email)=>{
   if(validRegex.test(email)){
     return true;
   }else{
-    requireMess.innerHTML = '<img class="mb-3" src="imgs/fail.png" alt="fail"/> <p class="fail mb-3">Invalid Email!</p>'
+    requireMess.innerHTML = '<img src="imgs/fail.png" alt="fail"/> <p class="fail">Invalid Email!</p>'
+    requireMess.style.display="flex"
     return false;
   }
 }
+
+const httpReq = (dataOj, queryStr, noti)=>{
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdwMMF_AOXOSV-23nG3Q2SZc2UDJdvrLvbFzpHhHDg1R9hxLw/formResponse",true);
+  xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+  noti.innerHTML='<img class="mb-3" src="imgs/success.png" alt="success"/> <p class="success mb-3">Gửi thông tin thành công!</p>'
+  dataOj.name.value="",
+  dataOj.phone.value="",
+  dataOj.email.value="",
+  dataOj.mess.value="",
+  xhr.send(queryStr);
+}
+
 const sendInfo =(check, dataOj, noti)=>{
   if(check){
     let dataReq = {
-      'entry.559400748': dataOj.name.value,
-      'entry.1040115808': dataOj.phone.value,
-      'entry.1832294402': dataOj.email.value,
-      'entry.1085358572':dataOj.mess.value
+      'entry.638256125': dataOj.name.value,
+      'entry.1184467511': dataOj.phone.value,
+      'entry.1354280366': dataOj.email.value,
+      'entry.706947604':dataOj.mess.value
     }
     let queryStr = new URLSearchParams(dataReq);
     queryStr = queryStr.toString();
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdTCR2TQ_yVQqTL696JByhSz7_A0VhDF85u1ajRTnI-HfkrIg/formResponse",true);
-    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-    noti.innerHTML='<img class="mb-3" src="imgs/success.png" alt="success"/> <p class="success mb-3">Gửi thông tin thành công!</p>'
-    dataOj.name.value="",
-    dataOj.phone.value="",
-    dataOj.email.value="",
-    dataOj.mess.value="",
-    xhr.send(queryStr);
+    httpReq(dataOj,queryStr,noti)
     setTimeout(()=>{
-    noti.innerHTML=''
+      noti.innerHTML=''
+      document.getElementById("submit").disabled = false;
     },3000)
   }
 }
+
 $("#email").keydown(function(){
   let requireMess = document.querySelector(".require")
+  requireMess.style.display="none"
   requireMess.innerHTML=''
 })
 // const selected = document.getElementById("email")

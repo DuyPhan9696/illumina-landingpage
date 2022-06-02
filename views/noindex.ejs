@@ -219,7 +219,6 @@
       <img class="position-absolute ovl-bg" src="imgs/contact-ovl.svg" alt="overlay background"/>
       <img class="position-absolute ovl-l" src="imgs/ovl-form-l.svg"alt="polygon left"/>
       <img class="position-absolute ovl-r" src="imgs/ovl-form-r.svg"alt="polygon right"/>
-
       <div class="container position-relative">
         <h1 class="title-content"><%-data.contactUs.title%></h1>
         <div class="contact-us-content row">
@@ -249,14 +248,14 @@
               <div class="mb-3 position-relative">
                 <img class="position-absolute" src="imgs/email-icon.svg" alt="email"/>
                 <input type="email" class="form-control" id="email" placeholder="Email" required >
+                <label class="require position-absolute align-items-center justify-content-center"></label>
               </div>
-              <label class="require position-relative d-flex align-items-center justify-content-center"></label>
               <div class="mb-4 position-relative" >
                 <img class="mess position-absolute" src="imgs/mess-icon.svg" alt="mess"/>
                 <textarea class="form-control" id="mess" placeholder="Message"></textarea>
               </div>
               <div class="noti mb-3 position-relative d-flex align-items-center justify-content-center"></div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" id="submit" class="btn btn-primary">Send Message</button>
             </form>
           </div>
         </div>
