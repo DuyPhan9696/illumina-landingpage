@@ -19,17 +19,17 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container ">
         <nav class="navbar navbar-expand-lg row py-3">
-          <div class="col-3 col-xxl-4">
-              <a class="logo navbar-brand text-uppercase py-0 " href="#">
+          <div class=" col-2 col-xl-3 col-xxl-4">
+              <a class="logo navbar-brand text-uppercase py-0 " href="/">
                   <img src="imgs/<%= data.logo.img %>" alt="logo"/>
                   <p><%- data.logo.name %></p>
               </a>
           </div>
-          <div class="container-fluid col-9 col-xxl-8">
+          <div class="container-fluid col-10 col-xl-9 col-xxl-8">
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,7 +72,7 @@
         </div>
       </div>
     </section>
-    <section class="core position-relative">
+    <section class="core position-relative" id="core-value">
       <img class="ovl-2" src="imgs/ovl-2-core.svg" alt="polygon-top"/>
       <img class="ovl-1" src="imgs/ovl-1-core.svg" alt="ovl-wave"/>
       <img class="ovl-3" src="imgs/ovl-3-core.svg"alt="polygon-right"/>
@@ -109,7 +109,7 @@
         <div class="process_content position-relative">
           <% for (i in data.processExecution.content) {%>
           <div class="process-item-<%= data.processExecution.content[i].position %> row position-relative">
-            <div class="col-6 process-item position-relative d-flex flex-column justify-content-center">
+            <div class="col-8 col-xl-6 process-item position-relative d-flex flex-column justify-content-center">
               <h2><%= data.processExecution.content[i].name %></h2>
               <p><%= data.processExecution.content[i].description %></p>
                 <img class="position-absolute" src="imgs/<%= data.processExecution.content[i].img %>"/>
@@ -142,7 +142,7 @@
                   <h2>Technology products</h2>
                 </div>
                 <div class="col-7">
-                  <h2>Technology products</h2>
+                  <h2>Project details</h2>
                 </div>
               </div>
               <% for (j in data.product.tabs[i].techProduct) {%>
@@ -237,23 +237,25 @@
             <% } %>
           </div>
           <div class="col">
-            <form>
+            <form id="submit_form" action="" method="post">
               <div class="mb-3 position-relative">
                 <img class="position-absolute" src="imgs/user-icon.svg" alt="user"/>
                 <input type="text" class="form-control" id="name" placeholder="First Name">
               </div>
-              <div class="mb-3 position-relative">
+              <div class="mb-4 position-relative">
                 <img class="position-absolute" src="imgs/phone-icon.svg" alt="phone"/>
                 <input type="text" class="form-control" id="phone" placeholder="Phone">
               </div>
               <div class="mb-3 position-relative">
                 <img class="position-absolute" src="imgs/email-icon.svg" alt="email"/>
-                <input type="email" class="form-control" id="email" placeholder="Email">
+                <input type="email" class="form-control" id="email" placeholder="Email" required >
               </div>
-              <div class="mb-3 position-relative" >
+              <label class="require position-relative d-flex align-items-center justify-content-center"></label>
+              <div class="mb-4 position-relative" >
                 <img class="mess position-absolute" src="imgs/mess-icon.svg" alt="mess"/>
-                <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                <textarea class="form-control" id="mess" placeholder="Message"></textarea>
               </div>
+              <div class="noti mb-3 position-relative d-flex align-items-center justify-content-center"></div>
               <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
           </div>

@@ -9,21 +9,26 @@
         "link": "about-us"
       },
       {
-        "name": "Product",
-        "link": "product"
-      },
-      {
-        "name": "Our Services",
-        "link": "services"
+        "name": "Core Value",
+        "link": "core-value"
       },
       {
         "name": "Process Execution",
         "link": "process"
       },
       {
+        "name": "Our Services",
+        "link": "services"
+      },
+      {
+        "name": "Product",
+        "link": "product"
+      },
+      {
         "name": "Contact Us",
         "link": "contact-us"
       }
+
     ],
     "aboutUs":{
       "title":"Solution - Transparency - Cooperation",
@@ -132,8 +137,8 @@
           "position":"left"
         },
         {
-          "name":"Testing",
-          "description":"At this stage, we focus on the sequence of that during software testing. By employing a sane software testing life cycle,an organization ends up with a quality strategy more likely to better results. Presenting a perfect product to the customer is the end goal of every organization.",
+          "name":"Support and Customer Survice",
+          "description":"Onboarding refers to the entire process of helping new customers understand how to use our products and services. We maintain and optimize products and platforms on a regular basis, market strategies, and give real-time assistance.",
           "img":"process-6.svg",
           "alt":"process-6",
           "position":"right"
@@ -163,7 +168,6 @@
             }
           ]
         },
-        
         { 
           "name":"mind",
           "imgTitle":"mind.svg",
@@ -171,16 +175,45 @@
           "active":"",
           "techProduct":[
             {
-              "nameProduct":"Mind-1",
-              "infoProduct":"Provide a platform that allows users to install and manage batteries for charging system of Vinfast's battery factory."
+              "nameProduct":"App Lemo Letsmove.space ",
+              "infoProduct":"Blockchain project aims to connect people who enjoy outdoor sports like jogging, cycling, and swimming to earn money."
             },
             {
-              "nameProduct":"Mind-2",
-              "infoProduct":"The system allows businesses/organizations to create electronic invoices and pay taxes online."
+              "nameProduct":"Quản lý chấm công - Time Keeping Systems",
+              "infoProduct":"Offer comprehensive control of employee working time through its state of the art time management software. The software also offers the ability to generate numerous useful analytical reports to address issues.",
+              "list":[
+                {
+                  "content":"1. Keep Up To Date With HR Matters"
+                },
+                {
+                  "content":"2. Software to Assure Compliance"
+                },
+                {
+                  "content":"3. Analytic Reports & Data for Cost Saving"
+                },
+                {
+                  "content":"4. Time Allocation System for Managers"
+                }
+              ]
             },
             {
-              "nameProduct":"Mind-3",
-              "infoProduct":"Xây dựng và phát triển nền tảng dữ liệu lớn phục vụ việc giám sát và lắng nghe thông tin từ xác trang MXH: facebook, twitter, các trang báo điện tử. Tích hợp các giải pháp: Crawler, Big Data, AI."
+              "nameProduct":"Tối ưu giờ làm việc - Time Management System",
+              "infoProduct":"Using math tools, automate and optimize shift creation. Manage and connect with other Time Keeping System."
+            },
+            {
+              "nameProduct":"Ứng dụng đặt xe đưa/đón cho học viên trường đào tạo lái xe (Car Booking Application)",
+              "infoProduct":"Managing drivers and routes Allows customers (students of the driver training school) to schedule pick up and drop off Automatically allocate schedules and routes for drivers to pick up and drop off students"
+            },{
+              "nameProduct":"Hệ thống mạng xã hội liên kết giữa sinh viên và các công ty",
+              "infoProduct":"Provide services for customers (companies businesses) to create events/workshops to connect the company with incoming students. Real-time chat feature between graduating students and former students of the same university, who are working at companies that are interested in graduating students"
+            },
+            {
+              "nameProduct":"Hệ thống quản lý rủi ro các toà nhà  (Building Management System)",
+              "infoProduct":"Using math tools, automate and optimize shift creation. Manage and connect with other Time Keeping System."
+            },
+            {
+              "nameProduct":"Tối ưu giờ làm việc - Time Management System",
+              "infoProduct":"Management of buildings, including management of rooms, floors, properties, etc. Allows owners to organize tender projects for survey risk assessment Allow contractors to participate in bidding, store risk survey information through mobile applications, then send data to the system. Export reports from the system. Export data and measurement charts to owners and organizations about the risks of buildings"
             }
           ]
         },
@@ -191,16 +224,12 @@
           "active":"",
           "techProduct":[
             {
-              "nameProduct":"TP-Bank-1",
-              "infoProduct":"Provide a platform that allows users to install and manage batteries for charging system of Vinfast's battery factory."
+              "nameProduct":"TPbank Portal ",
+              "infoProduct":"Development of financial service modules for TPBank digital banking service portal."
             },
             {
-              "nameProduct":"TP-Bank-2",
-              "infoProduct":"The system allows businesses/organizations to create electronic invoices and pay taxes online."
-            },
-            {
-              "nameProduct":"TP-Bank-3",
-              "infoProduct":"Xây dựng và phát triển nền tảng dữ liệu lớn phục vụ việc giám sát và lắng nghe thông tin từ xác trang MXH: facebook, twitter, các trang báo điện tử. Tích hợp các giải pháp: Crawler, Big Data, AI."
+              "nameProduct":"TPbank Call Center",
+              "infoProduct":"Developing applications that allow synchronization of online customer support channels: livebank, stringee, cisco,... of TPBank digital bank."
             }
           ]
         },
@@ -211,16 +240,8 @@
           "active":"",
           "techProduct":[
             {
-              "nameProduct":"Topica-1",
-              "infoProduct":"Provide a platform that allows users to install and manage batteries for charging system of Vinfast's battery factory."
-            },
-            {
-              "nameProduct":"Topica-2",
-              "infoProduct":"The system allows businesses/organizations to create electronic invoices and pay taxes online."
-            },
-            {
-              "nameProduct":"Topica-3",
-              "infoProduct":"Xây dựng và phát triển nền tảng dữ liệu lớn phục vụ việc giám sát và lắng nghe thông tin từ xác trang MXH: facebook, twitter, các trang báo điện tử. Tích hợp các giải pháp: Crawler, Big Data, AI."
+              "nameProduct":"TopKid",
+              "infoProduct":"Developing SMART educational platform for children. Provide solutions to open classes, schedule classes, register for classes, and payment online."
             }
           ]
         }
